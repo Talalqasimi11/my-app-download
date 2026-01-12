@@ -3,19 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download My App</title>
+    <title>CricLeague App Download</title>
+
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #121212; color: white; margin: 0; }
-        .card { text-align: center; padding: 2rem; border-radius: 12px; background: #1e1e1e; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-        .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background-color: #0056b3; }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top, #1a3d2f, #0b0f0d);
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        .card {
+            max-width: 420px;
+            width: 90%;
+            background: linear-gradient(180deg, #1e2f28, #121a17);
+            border-radius: 18px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin: 0.5rem 0;
+            font-size: 1.8rem;
+            color: #e8f5e9;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.6;
+            color: #cfd8dc;
+            font-size: 0.95rem;
+        }
+
+        .features {
+            margin: 1.5rem 0;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+            list-style: none;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "🏏";
+            position: absolute;
+            left: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.8rem;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #00c853, #2e7d32);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 6px 18px rgba(0, 200, 83, 0.35);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 26px rgba(0, 200, 83, 0.5);
+        }
+
+        .note {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #b0bec5;
+        }
     </style>
 </head>
 <body>
+
     <div class="card">
-        <h1>My Flutter App</h1>
-        <p>Click the button below to download the latest APK.</p>
-        <a href="CricLeague app.apk" class="btn" download>Download APK</a>
+        <div class="logo">🏏</div>
+
+        <h1>CricLeague App</h1>
+        <p>
+            Manage teams, track live scores, and run cricket tournaments smoothly
+            with our all in one cricket league management app.
+        </p>
+
+        <ul class="features">
+            <li>Live ball by ball scoring</li>
+            <li>Team and player management</li>
+            <li>Tournament and match tracking</li>
+            <li>Fast and lightweight Android app</li>
+        </ul>
+
+        <a href="CricLeague app.apk" class="btn" download>
+            Download APK
+        </a>
+
+        <div class="note">
+            Android only • Enable “Install unknown apps” if prompted
+        </div>
     </div>
+
 </body>
 </html>
